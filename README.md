@@ -62,6 +62,8 @@ Key Libraries and Technologies Used
 - **Dotenv**: Loads environment variables from a .env file.
 - **Nodemon**: Utility for automatically restarting Node.js applications.
 
-If you find Expense Tracker Application helpful or interesting, please consider giving it a star ⭐ on GitHub! Your support means a lot and helps others discover the project.
+## More Info
+
+If you find the Expense Tracker Application helpful or interesting, please consider giving it a star ⭐ on GitHub! Your support means a lot and helps others discover the project.
 
 This project is developed purely for educational and learning purposes. Contributions, feedback, and suggestions are always welcome!
