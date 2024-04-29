@@ -63,4 +63,6 @@ To set up and run the Expense Tracker Application:
 ## More Info
 
 If you find the Expense Tracker Application helpful or interesting, please consider giving it a star ⭐ on GitHub! Your support means a lot and helps others discover the project.
-This project is developed purely for educational and learning purposes. Contributions, feedback, and suggestions are always welcome!
+This project is developed purely for educational and learning purposes.
+
+Contributions, feedback, and suggestions are always welcome!
