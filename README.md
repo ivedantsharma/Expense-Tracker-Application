@@ -2,7 +2,7 @@
 
 Expense Tracker Application is a web frontend for managing your income and expenses, built with React and ❤️.
 
-This frontend works seamlessly with the [Expense Tracker 💰 Backend](https://github.com/ivedantsharma/Expense-Tracker-Backend). You can find the backend repository and API documentation in the link provided.
+This frontend works seamlessly with the [Expense Tracker 💰 Backend](https://github.com/ivedantsharma/Expense-Tracker-Application/tree/main/backend). You can find the backend repository and API documentation in the link provided.
 
 ## Features
 
@@ -21,13 +21,13 @@ This application offers the following features:
 
 To set up and run the Expense Tracker Application:
 
-1. First, download or clone the [Expense Tracker 💰 Backend](https://github.com/ivedantsharma/Expense-Tracker-Backend) repository. Follow the setup and configuration instructions provided in the backend repository.
+1. First, download or clone the [Expense Tracker 💰 Backend](https://github.com/ivedantsharma/Expense-Tracker-Application.git) repository.
 
 2. Clone this repository.
 
 3. Navigate to the cloned directory in your terminal.
 
-4. Install frontend dependencies by navigating to the `frontend` directory and running:
+4. Install frontend and backend dependencies by navigating to the `frontend` and `backend` directory and running:
    ```sh
    cd frontend
    npm install
@@ -61,3 +61,7 @@ Key Libraries and Technologies Used
 - **Cors**: Cross-Origin Resource Sharing middleware for Express.
 - **Dotenv**: Loads environment variables from a .env file.
 - **Nodemon**: Utility for automatically restarting Node.js applications.
+
+If you find Expense Tracker Application helpful or interesting, please consider giving it a star ⭐ on GitHub! Your support means a lot and helps others discover the project.
+
+This project is developed purely for educational and learning purposes. Contributions, feedback, and suggestions are always welcome!
