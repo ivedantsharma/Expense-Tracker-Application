@@ -1,0 +1,19 @@
+# Common rules for the entire project
+
+# Ignore .env files
+*.env
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+
+# Ignore npm debugging logs
+npm-debug.log
+
+# Ignore build and compiled files
+/build/
+/dist/
+/.next/
+/.nuxt/
+/node_modules/
+/yarn-error.log
