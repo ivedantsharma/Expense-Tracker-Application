@@ -9,8 +9,6 @@ This frontend works seamlessly with the [Expense Tracker 💰 Backend](https://g
 This application offers the following features:
 
 - Landing Page
-- Login and Registration
-- Profile and Password Management
 - Manage Income and Expense Categories
 - Track Income and Expense Transactions
 - Chart View of Income and Expense
@@ -42,9 +40,9 @@ To set up and run the Expense Tracker Application:
 
 ## Technology Used
 
-Key Libraries and Technologies Used
+### Key Libraries and Technologies Used
 
-### Frontend
+#### Frontend
 
 - **React**: A JavaScript library for building user interfaces.
 - **Axios**: A promise-based HTTP client for making API requests.
@@ -52,7 +50,7 @@ Key Libraries and Technologies Used
 - **React Hook Form**: Performant, flexible, and extensible forms with easy-to-use validation.
 - **Styled Components**: CSS-in-JS library for styling React components.
 
-### Backend
+#### Backend
 
 - **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine.
 - **Express.js**: Fast, unopinionated, minimalist web framework for Node.js.
@@ -65,5 +63,4 @@ Key Libraries and Technologies Used
 ## More Info
 
 If you find the Expense Tracker Application helpful or interesting, please consider giving it a star ⭐ on GitHub! Your support means a lot and helps others discover the project.
-
 This project is developed purely for educational and learning purposes. Contributions, feedback, and suggestions are always welcome!
