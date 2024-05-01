@@ -3,3 +3,6 @@
 /.cache/
 /.pnp/
 .pnp.js
+.vercel
+# Frontend build folder
+frontend/build/
