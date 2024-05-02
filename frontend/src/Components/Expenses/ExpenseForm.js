@@ -76,7 +76,7 @@ function ExpenseForm() {
           onChange={handleInput("category")}
         >
           <option value="" disabled>
-            Select Option
+            Select Category
           </option>
           <option value="education">Education</option>
           <option value="groceries">Groceries</option>
@@ -94,8 +94,8 @@ function ExpenseForm() {
           value={description}
           placeholder="Add A Reference"
           id="description"
-          cols="30"
-          rows="4"
+          cols="50"
+          rows="5"
           onChange={handleInput("description")}
         ></textarea>
       </div>
@@ -157,7 +157,7 @@ const ExpenseFormStyled = styled.form`
     button {
       box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
       &:hover {
-        background: var(--color-green) !important;
+        background: red !important;
       }
     }
   }

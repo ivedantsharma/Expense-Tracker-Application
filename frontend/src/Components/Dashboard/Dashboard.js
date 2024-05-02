@@ -44,7 +44,11 @@ function Dashboard() {
               </div>
               <div className="balance">
                 <h2>Total Balance</h2>
-                <p>
+                <p
+                  style={{
+                    color: totalBalance() < 0 ? "red" : "var(--color-green)",
+                  }}
+                >
                   {dollar} {totalBalance()}
                 </p>
               </div>
@@ -56,15 +60,35 @@ function Dashboard() {
               Min <span>Salary</span>Max
             </h2>
             <div className="salary-item">
-              <p>${Math.min(...incomes.map((item) => item.amount))}</p>
-              <p>${Math.max(...incomes.map((item) => item.amount))}</p>
+              <p>
+                $
+                {Math.min(...incomes.map((item) => item.amount)) === Infinity
+                  ? 0
+                  : Math.min(...incomes.map((item) => item.amount))}
+              </p>
+              <p>
+                $
+                {Math.max(...incomes.map((item) => item.amount)) === -Infinity
+                  ? 0
+                  : Math.max(...incomes.map((item) => item.amount))}
+              </p>
             </div>
             <h2 className="salary-title">
               Min <span>Expense</span>Max
             </h2>
             <div className="salary-item">
-              <p>${Math.min(...expenses.map((item) => item.amount))}</p>
-              <p>${Math.max(...expenses.map((item) => item.amount))}</p>
+              <p>
+                $
+                {Math.min(...expenses.map((item) => item.amount)) === Infinity
+                  ? 0
+                  : Math.min(...expenses.map((item) => item.amount))}
+              </p>
+              <p>
+                $
+                {Math.max(...expenses.map((item) => item.amount)) === -Infinity
+                  ? 0
+                  : Math.max(...expenses.map((item) => item.amount))}
+              </p>
             </div>
           </div>
         </div>
@@ -113,7 +137,7 @@ const DashboardStyled = styled.div`
           p {
             color: var(--color-green);
             opacity: 0.6;
-            font-size: 4.5rem;
+            font-size: 3.5rem;
           }
         }
       }

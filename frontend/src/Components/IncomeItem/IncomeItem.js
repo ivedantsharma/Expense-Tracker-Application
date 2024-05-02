@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { dateFormat } from "../../utils/dateFormat";
+import dateFormat from "../../utils/dateFormat";
 import {
   bitcoin,
   book,
@@ -84,7 +84,7 @@ function IncomeItem({
   console.log("type", type);
 
   return (
-    <IncomeItemStyled indicator={indicatorColor}>
+    <IncomeItemStyled indicator={type === "expense" ? "red" : indicatorColor}>
       <div className="icon">
         {type === "expense" ? expenseCatIcon() : categoryIcon()}
       </div>
@@ -111,7 +111,6 @@ function IncomeItem({
               bg={"var(--primary-color"}
               color={"#fff"}
               iColor={"#fff"}
-              hColor={"var(--color-green)"}
               onClick={() => deleteItem(id)}
             />
           </div>

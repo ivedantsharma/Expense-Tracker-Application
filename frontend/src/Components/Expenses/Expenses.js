@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import { useGlobalContext } from "../../context/globalContext";
 import { InnerLayout } from "../../styles/Layouts";
-import Form from "../Form/Form";
 import IncomeItem from "../IncomeItem/IncomeItem";
 import ExpenseForm from "./ExpenseForm";
 
@@ -69,7 +68,7 @@ const ExpenseStyled = styled.div`
     span {
       font-size: 2.5rem;
       font-weight: 800;
-      color: var(--color-green);
+      color: red;
     }
   }
   .income-content {

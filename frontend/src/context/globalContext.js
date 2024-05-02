@@ -40,10 +40,10 @@ export const GlobalProvider = ({ children }) => {
     return totalIncome;
   };
 
-  //calculate incomes
-  const addExpense = async (income) => {
+  //calculate expenses
+  const addExpense = async (expense) => {
     const response = await axios
-      .post(`${BASE_URL}add-expense`, income)
+      .post(`${BASE_URL}add-expense`, expense)
       .catch((err) => {
         setError(err.response.data.message);
       });
@@ -62,25 +62,26 @@ export const GlobalProvider = ({ children }) => {
   };
 
   const totalExpenses = () => {
-    let totalIncome = 0;
-    expenses.forEach((income) => {
-      totalIncome = totalIncome + income.amount;
+    let totalExpense = 0;
+    expenses.forEach((expense) => {
+      totalExpense = totalExpense + expense.amount;
     });
 
-    return totalIncome;
+    return totalExpense;
   };
 
   const totalBalance = () => {
     return totalIncome() - totalExpenses();
   };
 
+  // calculate transaction history
   const transactionHistory = () => {
     const history = [...incomes, ...expenses];
     history.sort((a, b) => {
       return new Date(b.createdAt) - new Date(a.createdAt);
     });
 
-    return history.slice(0, 3);
+    return history.slice(0, 4);
   };
 
   return (

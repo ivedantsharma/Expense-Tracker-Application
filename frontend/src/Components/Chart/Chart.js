@@ -14,7 +14,7 @@ import {
 import { Line } from "react-chartjs-2";
 import styled from "styled-components";
 import { useGlobalContext } from "../../context/globalContext";
-import { dateFormat } from "../../utils/dateFormat";
+import dateFormat from "../../utils/dateFormat";
 
 ChartJs.register(
   CategoryScale,
@@ -45,7 +45,7 @@ function Chart() {
           }),
         ],
         backgroundColor: "green",
-        tension: 0.2,
+        tension: 0.3,
       },
       {
         label: "Expenses",
@@ -56,7 +56,7 @@ function Chart() {
           }),
         ],
         backgroundColor: "red",
-        tension: 0.2,
+        tension: 0.3,
       },
     ],
   };

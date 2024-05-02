@@ -10,7 +10,7 @@ function Income() {
 
   useEffect(() => {
     getIncomes();
-  }); // removed ,[]
+  }, []); // removed ,[]
   return (
     <IncomeStyled>
       <InnerLayout>

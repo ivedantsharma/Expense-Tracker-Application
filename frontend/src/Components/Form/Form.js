@@ -43,7 +43,7 @@ function Form() {
           type="text"
           value={title}
           name={"title"}
-          placeholder="Salary Title"
+          placeholder="Income Title"
           onChange={handleInput("title")}
         />
       </div>
@@ -52,7 +52,7 @@ function Form() {
           value={amount}
           type="text"
           name={"amount"}
-          placeholder={"Salary Amount"}
+          placeholder={"Income Amount"}
           onChange={handleInput("amount")}
         />
       </div>
@@ -76,7 +76,7 @@ function Form() {
           onChange={handleInput("category")}
         >
           <option value="" disabled>
-            Select Option
+            Select Category
           </option>
           <option value="salary">Salary</option>
           <option value="freelancing">Freelancing</option>
@@ -94,8 +94,8 @@ function Form() {
           value={description}
           placeholder="Add A Reference"
           id="description"
-          cols="30"
-          rows="4"
+          cols="50"
+          rows="5"
           onChange={handleInput("description")}
         ></textarea>
       </div>

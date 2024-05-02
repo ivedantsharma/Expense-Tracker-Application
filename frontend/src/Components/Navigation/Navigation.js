@@ -2,7 +2,7 @@ import React from "react"; //useState removed
 import styled from "styled-components";
 import avatar from "../../img/avatar.png";
 import { signout } from "../../utils/Icons";
-import { menuItems } from "../../utils/menuItems";
+import menuItems from "../../utils/menuItems";
 
 function Navigation({ active, setActive }) {
   return (
@@ -10,7 +10,7 @@ function Navigation({ active, setActive }) {
       <div className="user-con">
         <img src={avatar} alt="" />
         <div className="text">
-          <h2>Mike</h2>
+          <h2>Vedant Sharma</h2>
           <p>Your Money</p>
         </div>
       </div>
@@ -47,6 +47,8 @@ const NavStyled = styled.nav`
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
+  draggable: false;
+  user-select: none;
   .user-con {
     height: 100px;
     display: flex;
@@ -108,6 +110,9 @@ const NavStyled = styled.nav`
       background: #222260;
       border-radius: 0 10px 10px 0;
     }
+  }
+  .bottom-nav {
+    cursor: pointer;
   }
 `;
 
