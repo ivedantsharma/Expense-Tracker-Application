@@ -1,6 +1,6 @@
 const IncomeSchema = require("../models/IncomeModel");
 
-exports.addIncome = async (req, res) => {
+const addIncome = async (req, res) => {
   const { title, amount, category, description, date } = req.body;
 
   const income = IncomeSchema({
@@ -30,7 +30,7 @@ exports.addIncome = async (req, res) => {
   console.log(income);
 };
 
-exports.getIncomes = async (req, res) => {
+const getIncomes = async (req, res) => {
   try {
     const incomes = await IncomeSchema.find().sort({ createdAt: -1 });
     res.status(200).json(incomes);
@@ -39,7 +39,7 @@ exports.getIncomes = async (req, res) => {
   }
 };
 
-exports.deleteIncome = async (req, res) => {
+const deleteIncome = async (req, res) => {
   const { id } = req.params;
   IncomeSchema.findByIdAndDelete(id)
     .then((income) => {
@@ -49,3 +49,5 @@ exports.deleteIncome = async (req, res) => {
       res.status(500).json({ message: "Server Error" });
     });
 };
+
+module.exports = { addIncome, getIncomes, deleteIncome };
