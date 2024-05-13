@@ -4,13 +4,6 @@ Expense Tracker Application is a web frontend for managing your income and expen
 
 This frontend works seamlessly with the [Expense Tracker 💰 Backend](https://github.com/ivedantsharma/Expense-Tracker-Application/tree/main/backend). You can find the backend repository and API documentation in the link provided.
 
-## Screen Shots
-
-![Screenshot from 2024-05-13 17-44-14](https://github.com/ivedantsharma/Expense-Tracker-Application/assets/153631137/df8557dc-85e7-4c7b-87eb-d7c7d938da85)
-![Screenshot from 2024-05-13 17-44-21](https://github.com/ivedantsharma/Expense-Tracker-Application/assets/153631137/b2a1cd4f-de79-4ceb-a920-e61dfebda29d)
-![Screenshot from 2024-05-13 17-44-25](https://github.com/ivedantsharma/Expense-Tracker-Application/assets/153631137/320050cf-6987-476b-a8e2-b524510c6abd)
-
-
 ## Features
 
 This application offers the following features:
@@ -66,6 +59,13 @@ To set up and run the Expense Tracker Application:
 - **Cors**: Cross-Origin Resource Sharing middleware for Express.
 - **Dotenv**: Loads environment variables from a .env file.
 - **Nodemon**: Utility for automatically restarting Node.js applications.
+
+## Screen Shots
+
+![Screenshot from 2024-05-13 17-44-14](https://github.com/ivedantsharma/Expense-Tracker-Application/assets/153631137/df8557dc-85e7-4c7b-87eb-d7c7d938da85)
+![Screenshot from 2024-05-13 17-44-21](https://github.com/ivedantsharma/Expense-Tracker-Application/assets/153631137/b2a1cd4f-de79-4ceb-a920-e61dfebda29d)
+![Screenshot from 2024-05-13 17-44-25](https://github.com/ivedantsharma/Expense-Tracker-Application/assets/153631137/320050cf-6987-476b-a8e2-b524510c6abd)
+
 
 ## More Info
 
