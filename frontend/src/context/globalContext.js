@@ -17,6 +17,7 @@ export const GlobalProvider = ({ children }) => {
       .catch((err) => {
         setError(err.response.data.message);
       });
+    console.log(response);
     getIncomes();
   };
 
@@ -28,6 +29,7 @@ export const GlobalProvider = ({ children }) => {
 
   const deleteIncome = async (id) => {
     const res = await axios.delete(`${BASE_URL}delete-income/${id}`);
+    console.log(res);
     getIncomes();
   };
 
@@ -47,6 +49,7 @@ export const GlobalProvider = ({ children }) => {
       .catch((err) => {
         setError(err.response.data.message);
       });
+    console.log(response);
     getExpenses();
   };
 
@@ -58,6 +61,7 @@ export const GlobalProvider = ({ children }) => {
 
   const deleteExpense = async (id) => {
     const res = await axios.delete(`${BASE_URL}delete-expense/${id}`);
+    console.log(res);
     getExpenses();
   };
 

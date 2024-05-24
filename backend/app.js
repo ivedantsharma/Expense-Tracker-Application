@@ -17,11 +17,19 @@ readdirSync("./routes").map((route) =>
   app.use("/api/v1", require("./routes/" + route))
 );
 
-const server = () => {
+// Export the app for Vercel
+module.exports = (req, res) => {
   db();
-  app.listen(PORT, () => {
-    console.log("listening to port:", PORT);
-  });
+  app(req, res);
 };
 
-server();
+if (process.env.NODE_ENV !== "production") {
+  const server = () => {
+    db();
+    app.listen(PORT, () => {
+      console.log("listening to port:", PORT);
+    });
+  };
+
+  server();
+}
