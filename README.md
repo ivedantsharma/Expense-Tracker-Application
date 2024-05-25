@@ -1,8 +1,8 @@
-# Expense Tracker Application 💰 
+# SpendWise💰 
 
-Expense Tracker Application is a web frontend for managing your income and expenses, built with React and ❤️.
+SpendWise is a web Application for managing your income and expenses, built with React and ❤️.
 
-This frontend works seamlessly with the [Expense Tracker 💰 Backend](https://github.com/ivedantsharma/Expense-Tracker-Application/tree/main/backend). You can find the backend repository and API documentation in the link provided.
+This frontend works seamlessly with the [SpendWise 💰 Backend](https://github.com/ivedantsharma/Expense-Tracker-Application/tree/main/backend). You can find the backend repository and API documentation in the link provided.
 
 ## Features
 
@@ -19,7 +19,7 @@ This application offers the following features:
 
 To set up and run the Expense Tracker Application:
 
-1. First, download or clone the [Expense Tracker 💰 Backend](https://github.com/ivedantsharma/Expense-Tracker-Application.git) repository.
+1. First, download or clone the [SpendWise 💰 Backend](https://github.com/ivedantsharma/Expense-Tracker-Application.git) repository.
 
 2. Clone this repository.
 
@@ -69,7 +69,7 @@ To set up and run the Expense Tracker Application:
 
 ## More Info
 
-If you find the Expense Tracker Application helpful or interesting, please consider giving it a star ⭐ on GitHub! Your support means a lot and helps others discover the project.
+If you find the SpendWise helpful or interesting, please consider giving it a star ⭐ on GitHub! Your support means a lot and helps others discover the project.
 This project is developed purely for educational and learning purposes.
 
 Contributions, feedback, and suggestions are always welcome!
